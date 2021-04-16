@@ -66,9 +66,6 @@ if os.access() == 0 then
 	os.exit()
 end
 
---Auto-Update
-dofile("git/updater.lua")
-
 ------------------------------------------Main--------------------------------------------------------------
 -- Copy sample data to ux0:data/mmminstal
  if not files.exists(uxpath.."app01.png") then files.copy("resources/installer/app01.png",uxpath) end
