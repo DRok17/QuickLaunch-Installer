@@ -2,7 +2,7 @@
 strings = {
 
 -- QL script.lua
-caption =       "QuickLaunch Installer v1.0 - DRok17 Edition",
+caption =       "QuickLaunch Installer v1.00 - DRok17 Edition",
 unsafe =		"UNSAFE MODE is required for this Homebrew !!!",
 menuline01 =    "Install default QL data",
 menuline02 =    "Install user 1 QL data",
