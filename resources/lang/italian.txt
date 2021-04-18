@@ -2,12 +2,17 @@
 strings = {
 
 -- QL script.lua
-caption =       "QuickLaunch Installer v0.3",
+caption =       "QuickLaunch Installer v1.1 - DRok17 Edition",
 unsafe =		"LA MODALITA' NON SICURA è richiesta per questo Homebrew !!!",
 menuline01 =    "Installa i dati di default del QL ",
-menuline02 =    "Installa i dati user del QL ",
-menuline03 =    "Cancella tutti i dati del QL ",
-menuline04 =    "Ritorna al LiveArea",
+menuline02 =    "Installa i dati user 1 del QL ",
+menuline03 =    "Installa i dati user 2 del QL ",
+menuline04 =    "Installa i dati user 3 del QL ",
+menuline05 =    "Installa i dati user 4 del QL ",
+menuline06 =    "Installa i dati user 5 del QL ",
+menuline07 =    "Installa i dati user 6 del QL ",
+menuline08 =    "Cancella tutti i dati del QL ",
+menuline09 =    "Ritorna al LiveArea",
 
 -- QL common.lua
 future_msg =    "Funzione riservata per versioni future.",

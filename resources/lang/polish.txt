@@ -2,12 +2,17 @@
 strings = {
 
 -- QL script.lua
-caption =       "QuickLaunch Installer v0.3",
+caption =       "QuickLaunch Installer v1.1 - DRok17 Edition",
 unsafe =		"Dla tej aplikacji wymagane jest włączenie ''podejrzanego homebrew'' w ustawieniach HENkaku !!!",
 menuline01 =    "Zainstaluj domyślne skróty QL",
-menuline02 =    "Zainstaluj własne skróty QL",
-menuline03 =    "Wyczyść wszystkie skróty QL",
-menuline04 =    "Wyjdź do LiveArea",
+menuline02 =    "Zainstaluj własne 1 skróty QL",
+menuline03 =    "Zainstaluj własne 2 skróty QL",
+menuline04 =    "Zainstaluj własne 3 skróty QL",
+menuline05 =    "Zainstaluj własne 4 skróty QL",
+menuline06 =    "Zainstaluj własne 5 skróty QL",
+menuline07 =    "Zainstaluj własne 6 skróty QL",
+menuline08 =    "Wyczyść wszystkie skróty QL",
+menuline09 =    "Wyjdź do LiveArea",
 
 -- QL common.lua
 future_msg =    "Funkcja zarezerwowana dla przyszłych wydań.",

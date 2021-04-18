@@ -1,5 +1,5 @@
 --[[
-	QuickLanch Installer
+	QuickLaunch Installer v1.1 - DRok17 Edition
 
 	Licensed by GNU General Public License v3.0
 
@@ -30,6 +30,15 @@ user2app03 = image.load ("resources/installer/user2/app03.png")
 user3app01 = image.load ("resources/installer/user3/app01.png")
 user3app02 = image.load ("resources/installer/user3/app02.png")
 user3app03 = image.load ("resources/installer/user3/app03.png")
+user4app01 = image.load ("resources/installer/user4/app01.png")
+user4app02 = image.load ("resources/installer/user4/app02.png")
+user4app03 = image.load ("resources/installer/user4/app03.png")
+user5app01 = image.load ("resources/installer/user5/app01.png")
+user5app02 = image.load ("resources/installer/user5/app02.png")
+user5app03 = image.load ("resources/installer/user5/app03.png")
+user6app01 = image.load ("resources/installer/user6/app01.png")
+user6app02 = image.load ("resources/installer/user6/app02.png")
+user6app03 = image.load ("resources/installer/user6/app03.png")
 
 -- Loading Special chars
 SYMBOL_CROSS	= string.char(0xe2)..string.char(0x95)..string.char(0xb3)
@@ -75,7 +84,7 @@ end
 
 dofile("system/commons.lua")
 
-options = { strings.menuline01, strings.menuline02, strings.menuline03, strings.menuline04, strings.menuline05, strings.menuline06}
+options = { strings.menuline01, strings.menuline02, strings.menuline03, strings.menuline04, strings.menuline05, strings.menuline06, strings.menuline07, strings.menuline08, strings.menuline09}
 sel = 1
 
 buttons.interval(10,12)
@@ -108,13 +117,19 @@ while true do
     if sel == 2 then modprev01() end
     if sel == 3 then modprev02() end
     if sel == 4 then modprev03() end
+    if sel == 5 then modprev04() end
+    if sel == 6 then modprev05() end
+    if sel == 7 then modprev06() end
 	if buttons.cross then
 		if sel == 1 then modinstall00()
 		elseif sel == 2 then modinstall01()
 		  elseif sel == 3 then modinstall02()
 		    elseif sel == 4 then modinstall03()
-			    elseif sel == 5 then modreset()
-				    elseif sel == 6 then os.exit() buttons.homepopup(1)
+		      elseif sel == 5 then modinstall04()
+		        elseif sel == 6 then modinstall05()
+		          elseif sel == 7 then modinstall06()
+			          elseif sel == 8 then modreset()
+				          elseif sel == 9 then os.exit() buttons.homepopup(1)
 		end
 	end
 

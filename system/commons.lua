@@ -75,6 +75,54 @@ function modinstall03()
  power.restart()
  end
 
+-- Install user 4 mod data function
+function modinstall04()
+ buttons.homepopup(0)
+ files.delete(urpath.."img")
+ files.mkdir(urpath.."img/")
+ files.delete(urpath.."whatsnew.xml")
+ files.copy("resources/installer/user4/app01.png",urpath.."img/")
+ files.copy("resources/installer/user4/app02.png",urpath.."img/")
+ files.copy("resources/installer/user4/app03.png",urpath.."img/")
+ files.copy("resources/installer/user4/whatsnew.xml",urpath)
+ custom_msg(strings.qlinst02,0)
+ os.delay(500)
+ buttons.homepopup(1)
+ power.restart()
+ end
+
+-- Install user 5 mod data function
+function modinstall05()
+ buttons.homepopup(0)
+ files.delete(urpath.."img")
+ files.mkdir(urpath.."img/")
+ files.delete(urpath.."whatsnew.xml")
+ files.copy("resources/installer/user5/app01.png",urpath.."img/")
+ files.copy("resources/installer/user5/app02.png",urpath.."img/")
+ files.copy("resources/installer/user5/app03.png",urpath.."img/")
+ files.copy("resources/installer/user5/whatsnew.xml",urpath)
+ custom_msg(strings.qlinst02,0)
+ os.delay(500)
+ buttons.homepopup(1)
+ power.restart()
+ end
+
+-- Install user 6 mod data function
+function modinstall06()
+ buttons.homepopup(0)
+ files.delete(urpath.."img")
+ files.mkdir(urpath.."img/")
+ files.delete(urpath.."whatsnew.xml")
+ files.copy("resources/installer/user6/app01.png",urpath.."img/")
+ files.copy("resources/installer/user6/app02.png",urpath.."img/")
+ files.copy("resources/installer/user6/app03.png",urpath.."img/")
+ files.copy("resources/installer/user6/whatsnew.xml",urpath)
+ custom_msg(strings.qlinst02,0)
+ os.delay(500)
+ buttons.homepopup(1)
+ power.restart()
+ end
+
 -- Reset mod data function
 function modreset()
  files.delete(urpath.."img")
@@ -119,6 +167,33 @@ function modprev03()
  if user3app01 then user3app01:blit(40,436) end
  if user3app02 then user3app02:blit(339,436) end
  if user3app03 then user3app03:blit(641,436) end
+end
+
+-- Preview user 4 mod function
+function modprev04()
+ draw.fillrect(0,406,960,138, 0x64545353) --UP
+ screen.print(10,416,strings.preview,1,color.white,color.blue,__ALEFT)
+ if user4app01 then user4app01:blit(40,436) end
+ if user4app02 then user4app02:blit(339,436) end
+ if user4app03 then user4app03:blit(641,436) end
+end
+
+-- Preview user 5 mod function
+function modprev05()
+ draw.fillrect(0,406,960,138, 0x64545353) --UP
+ screen.print(10,416,strings.preview,1,color.white,color.blue,__ALEFT)
+ if user5app01 then user5app01:blit(40,436) end
+ if user5app02 then user5app02:blit(339,436) end
+ if user5app03 then user5app03:blit(641,436) end
+end
+
+-- Preview user 6 mod function
+function modprev06()
+ draw.fillrect(0,406,960,138, 0x64545353) --UP
+ screen.print(10,416,strings.preview,1,color.white,color.blue,__ALEFT)
+ if user6app01 then user6app01:blit(40,436) end
+ if user6app02 then user6app02:blit(339,436) end
+ if user6app03 then user6app03:blit(641,436) end
 end
 
 -- AppInstaller Function

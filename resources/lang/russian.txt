@@ -2,12 +2,17 @@
 strings = {
 
 -- QL script.lua
-caption =       "QuickLaunch Installer v0.3",
+caption =       "QuickLaunch Installer v1.1 - DRok17 Edition",
 unsafe =		"UNSAFE MODE is required for this Homebrew !!!",
 menuline01 =    "Установить меню QuickLaunch",
-menuline02 =    "Установить пользовательское меню",
-menuline03 =    "Очистить текущие данные",
-menuline04 =    "Выход в LiveArea",
+menuline02 =    "Установить пользовательское 1 меню",
+menuline03 =    "Установить пользовательское 2 меню",
+menuline04 =    "Установить пользовательское 3 меню",
+menuline05 =    "Установить пользовательское 4 меню",
+menuline06 =    "Установить пользовательское 5 меню",
+menuline07 =    "Установить пользовательское 6 меню",
+menuline08 =    "Очистить текущие данные",
+menuline09 =    "Выход в LiveArea",
 
 -- QL common.lua
 future_msg =    "Данная функция зарезервирована для следующих версий приложения.",

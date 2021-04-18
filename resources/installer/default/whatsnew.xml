@@ -13,7 +13,7 @@
 </mtrl>
 <mtrl anno="" from="2001-01-01T00:00:00.000Z" id="3" lastm="2001-01-01T00:00:00.000Z" mname="" until="2100-12-31T23:59:00.000Z" >
  <url type="106" >app03.png</url>
- <target type="u" >psgm:play?titleid=PKGJ00000</target>
+ <target type="u" >settings_dlg:</target>
  <cntry agelmt="18" >all</cntry>
  <lang >all</lang>
 </mtrl>
