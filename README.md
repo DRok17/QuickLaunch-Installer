@@ -47,6 +47,7 @@ Simply delete the PNG app# you want to replace and run the "z-png-switch.bat" fi
 
 
 QuickLauncher ID
+
 Open the z-Replace-ID.bat to access this menu:
 
 ![image](https://user-images.githubusercontent.com/81541725/115171223-96c28f80-a090-11eb-9741-8092b98e0479.png)
@@ -54,6 +55,7 @@ Open the z-Replace-ID.bat to access this menu:
 Enter 9 digit Title ID and select which number it belongs to.
 
 More Options
+
 If you would like to customize the User slots, please find the files in the zIMG folder under:
 ux0:app/QLINSTALL/z-User-Folders
 
