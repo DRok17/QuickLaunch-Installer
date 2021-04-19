@@ -63,4 +63,12 @@ ux0:app/QLINSTALL/z-User-Folders
 
 
 Images
+
 All PNGs need to be 282 x 108. If you would like to title it, I've placed a Pixlr X file in the VPK for easy customization.
+
+![image](https://user-images.githubusercontent.com/81541725/115172448-4bf64700-a093-11eb-8c3d-6024ca0570f0.png)
+
+![image](https://user-images.githubusercontent.com/81541725/115172492-65978e80-a093-11eb-8f38-e2b296aca997.png)
+
+
+
