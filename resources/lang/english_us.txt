@@ -2,7 +2,7 @@
 strings = {
 
 -- QL script.lua
-caption =       "QuickLaunch Installer v1.1 - DRok17 Edition",
+caption =       "QuickLaunch Installer v1.2 - DRok17 Edition",
 unsafe =		"UNSAFE MODE is required for this Homebrew !!!",
 menuline01 =    "Install default QL data",
 menuline02 =    "Install user 1 QL data",
@@ -16,9 +16,9 @@ menuline09 =    "Exit to LiveArea",
 
 -- QL common.lua
 future_msg =    "Function reserved for future releases.",
-qlinst01 =      "QuickLaunch data has been installed.\n\nWe need to restart your PS Vita.",
-qlinst02 =      "User QuickLaunch data has been installed.\n\nWe need to restart your PS Vita.",
-cleardata =     "All QuickLanch data was cleared.\nActual SCE data will be restored after next\ninternet connection.\n\nWe need to restart your PSVita.",
+qlinst01 =      "QuickLaunch data has been installed.\n\n      PS Vita will now restart.",
+qlinst02 =      "User QuickLaunch data has been installed.\n\n      PS Vita will now restart.",
+cleardata =     "All QuickLaunch data was cleared.\nActual SCE data will be restored after next\ninternet connection.\n\nWe need to restart your PSVita.",
 preview =       "Preview: Shortcuts for QuickLaunch",
 
 unk =			"UNK",

@@ -20,6 +20,7 @@ IF %M%==2 GOTO APP02
 IF %M%==3 GOTO APP03
 
 :APP01
+@echo|set /p="c"> "./replace-id/c.txt"
 cd ".\replace-id"
 start rename-APP01-OUT.bat
 timeout 2 >nul
@@ -27,6 +28,7 @@ copy ".\id.txt" ".\z-1.txt"
 exit
 
 :APP02
+@echo|set /p="c"> "./replace-id/c.txt"
 cd ".\replace-id"
 start rename-APP02-OUT.bat
 timeout 2 >nul
@@ -34,6 +36,7 @@ copy ".\id.txt" ".\z-2.txt"
 exit
 
 :APP03
+@echo|set /p="c"> "./replace-id/c.txt"
 cd ".\replace-id"
 start rename-APP03-OUT.bat
 timeout 2 >nul

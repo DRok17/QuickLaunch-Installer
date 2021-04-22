@@ -1,5 +1,5 @@
 --[[
-	QuickLaunch Installer v1.1 - DRok17 Edition
+	QuickLaunch Installer v1.2 - DRok17 Edition
 
 	Licensed by GNU General Public License v3.0
 
@@ -13,7 +13,84 @@ color.loadpalette()
 -- Set path
 local uxpath = "ux0:data/qlinstall/"
 files.mkdir(uxpath)
+local user1 = "ux0:app/QLINSTALL/resources/installer/user1/"
+local user2 = "ux0:app/QLINSTALL/resources/installer/user2/"
+local user3 = "ux0:app/QLINSTALL/resources/installer/user3/"
+local user4 = "ux0:app/QLINSTALL/resources/installer/user4/"
+local user5 = "ux0:app/QLINSTALL/resources/installer/user5/"
+local user6 = "ux0:app/QLINSTALL/resources/installer/user6/"
+local installer = "ux0:app/QLINSTALL/resources/installer/"
 local urpath = "ur0:shell/whats_new/np/"
+
+-- Load Backups
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/user1",installer) end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/user2",installer) end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/user3",installer) end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/user4",installer) end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/user5",installer) end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/user6",installer) end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."backup/zimg",installer) end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/app01.png",user1) end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/app02.png",user1) end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/app03.png",user1) end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/whatsnew.xml",user1) end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/z-1.txt",user1.."replace-id/") end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/z-2.txt",user1.."replace-id/") end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/z-3.txt",user1.."replace-id/") end
+ if not files.exists(user1.."replace-id/c.txt") then files.copy(uxpath.."user1/c.txt",user1.."replace-id/") end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/app01.png",user2) end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/app02.png",user2) end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/app03.png",user2) end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/whatsnew.xml",user2) end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/z-1.txt",user2.."replace-id/") end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/z-2.txt",user2.."replace-id/") end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/z-3.txt",user2.."replace-id/") end
+ if not files.exists(user2.."replace-id/c.txt") then files.copy(uxpath.."user2/c.txt",user2.."replace-id/") end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/app01.png",user3) end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/app02.png",user3) end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/app03.png",user3) end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/whatsnew.xml",user3) end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/z-1.txt",user3.."replace-id/") end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/z-2.txt",user3.."replace-id/") end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/z-3.txt",user3.."replace-id/") end
+ if not files.exists(user3.."replace-id/c.txt") then files.copy(uxpath.."user3/c.txt",user3.."replace-id/") end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/app01.png",user4) end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/app02.png",user4) end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/app03.png",user4) end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/whatsnew.xml",user4) end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/z-1.txt",user4.."replace-id/") end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/z-2.txt",user4.."replace-id/") end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/z-3.txt",user4.."replace-id/") end
+ if not files.exists(user4.."replace-id/c.txt") then files.copy(uxpath.."user4/c.txt",user4.."replace-id/") end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/app01.png",user5) end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/app02.png",user5) end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/app03.png",user5) end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/whatsnew.xml",user5) end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/z-1.txt",user5.."replace-id/") end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/z-2.txt",user5.."replace-id/") end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/z-3.txt",user5.."replace-id/") end
+ if not files.exists(user5.."replace-id/c.txt") then files.copy(uxpath.."user5/c.txt",user5.."replace-id/") end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/app01.png",user6) end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/app02.png",user6) end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/app03.png",user6) end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/whatsnew.xml",user6) end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/z-1.txt",user6.."replace-id/") end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/z-2.txt",user6.."replace-id/") end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/z-3.txt",user6.."replace-id/") end
+ if not files.exists(user6.."replace-id/c.txt") then files.copy(uxpath.."user6/c.txt",user6.."replace-id/") end
+ if files.exists("z-Replace-ID.bat") then files.copy(uxpath.."zimg",installer) end
+
+ -- Load Updated files WIP
+ if files.exists("z-QL-Pixlr-E.pxz") then files.move("z-QL-Pixlr-E.pxz",installer.."zimg/") end
+ if files.exists("z-Replace-ID.bat") then files.copy("z-Replace-ID.bat",user1) end
+ if files.exists("z-Replace-ID.bat") then files.copy("z-Replace-ID.bat",user2) end
+ if files.exists("z-Replace-ID.bat") then files.copy("z-Replace-ID.bat",user3) end
+ if files.exists("z-Replace-ID.bat") then files.copy("z-Replace-ID.bat",user4) end
+ if files.exists("z-Replace-ID.bat") then files.copy("z-Replace-ID.bat",user5) end
+ if files.exists("z-Replace-ID.bat") then files.copy("z-Replace-ID.bat",user6) end
+ if files.exists("z-Replace-ID.bat") then files.delete("z-Replace-ID.bat") end
+ if not files.exists("z-Replace-ID.bat") then files.delete(uxpath.."backup/") end
+
 
 -- Loading UI GFX
 back = image.load("resources/back.jpg")
@@ -76,11 +153,56 @@ if os.access() == 0 then
 end
 
 ------------------------------------------Main--------------------------------------------------------------
--- Copy sample data to ux0:data/mmminstal
- if not files.exists(uxpath.."app01.png") then files.copy("resources/installer/app01.png",uxpath) end
- if not files.exists(uxpath.."app02.png") then files.copy("resources/installer/app02.png",uxpath) end
- if not files.exists(uxpath.."app03.png") then files.copy("resources/installer/app03.png",uxpath) end
- if not files.exists(uxpath.."whatsnew.xml") then files.copy("resources/installer/whatsnew.xml",uxpath) end
+-- Backup to uxpath - ux0:data/qlinstall/ --
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/app01.png",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/app02.png",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/app03.png",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/whatsnew.xml",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/replace-id/z-1.txt",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/replace-id/z-2.txt",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/replace-id/z-3.txt",uxpath.."user1/") end
+ if files.exists(user1.."replace-id/c.txt") then files.copy("resources/installer/user1/replace-id/c.txt",uxpath.."user1/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/app01.png",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/app02.png",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/app03.png",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/whatsnew.xml",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/replace-id/z-1.txt",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/replace-id/z-2.txt",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/replace-id/z-3.txt",uxpath.."user2/") end
+ if files.exists(user2.."replace-id/c.txt") then files.copy("resources/installer/user2/replace-id/c.txt",uxpath.."user2/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/app01.png",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/app02.png",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/app03.png",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/whatsnew.xml",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/replace-id/z-1.txt",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/replace-id/z-2.txt",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/replace-id/z-3.txt",uxpath.."user3/") end
+ if files.exists(user3.."replace-id/c.txt") then files.copy("resources/installer/user3/replace-id/c.txt",uxpath.."user3/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/app01.png",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/app02.png",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/app03.png",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/whatsnew.xml",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/replace-id/z-1.txt",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/replace-id/z-2.txt",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/replace-id/z-3.txt",uxpath.."user4/") end
+ if files.exists(user4.."replace-id/c.txt") then files.copy("resources/installer/user4/replace-id/c.txt",uxpath.."user4/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/app01.png",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/app02.png",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/app03.png",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/whatsnew.xml",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/replace-id/z-1.txt",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/replace-id/z-2.txt",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/replace-id/z-3.txt",uxpath.."user5/") end
+ if files.exists(user5.."replace-id/c.txt") then files.copy("resources/installer/user5/replace-id/c.txt",uxpath.."user5/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/app01.png",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/app02.png",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/app03.png",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/whatsnew.xml",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/replace-id/z-1.txt",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/replace-id/z-2.txt",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/replace-id/z-3.txt",uxpath.."user6/") end
+ if files.exists(user6.."replace-id/c.txt") then files.copy("resources/installer/user6/replace-id/c.txt",uxpath.."user6/") end
+ if files.exists("resources/installer/zimg") then files.copy("resources/installer/zimg",uxpath) end
 
 dofile("system/commons.lua")
 
