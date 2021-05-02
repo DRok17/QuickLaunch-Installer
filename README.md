@@ -63,8 +63,6 @@ More Options
 If you would like to customize the User slots, please find the files in the zIMG folder under:
 ux0:data/qlinstaller/
 
-![image](https://user-images.githubusercontent.com/81541725/115171289-bce82f80-a090-11eb-95b3-895205e0851b.png)
-
 
 
 
