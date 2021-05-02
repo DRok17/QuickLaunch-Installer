@@ -50,7 +50,7 @@ local samples = {
 	{["name"] = "            User 5 QL", ["id"] = "user5", ["desc1"] = user5app01, ["desc2"] = user5app02, ["desc3"] = user5app03},
 	{["name"] = "            User 6 QL", ["id"] = "user6", ["desc1"] = user6app01, ["desc2"] = user6app02, ["desc3"] = user6app03},
 	{["name"] = "Clear/Restore QL data", ["id"] = "z-reset", ["desc1"] = resapp01, ["desc2"] = resapp02, ["desc3"] = resapp03},
-	{["name"] = "     Exit to LiveArea", ["id"] = "zz-exit"},
+	{["name"] = "      Exit to LiveArea", ["id"] = "zz-exit"},
 }
 
 -- Initializing oldpad variable
