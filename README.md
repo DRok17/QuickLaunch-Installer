@@ -1,5 +1,7 @@
 # QuickLaunch-Installer
 
+QuickLaunch Installer v1.3 is now made in Lua Player Plus.
+
 Originally created by 1upus, QuickLaunch Installer allows you to customize the quick menu shortcuts.
 v1.3 has 6 User customizable slots and 1 preset slot.
 
