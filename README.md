@@ -3,11 +3,12 @@
 Originally created by 1upus, QuickLaunch Installer allows you to customize the quick menu shortcuts.
 v1.1 now has 6 User customizable slots and 1 default slot.
 
-![image](https://user-images.githubusercontent.com/81541725/115171095-451a0500-a090-11eb-9f71-f50e8ca20f80.png)
+![1](https://user-images.githubusercontent.com/81541725/116811330-bdfc7080-ab16-11eb-841f-d49152d7c768.png)
 
-![image](https://user-images.githubusercontent.com/81541725/115171108-4ea36d00-a090-11eb-87b8-a0af0d786d50.png)
+![2](https://user-images.githubusercontent.com/81541725/116811356-e2f0e380-ab16-11eb-9e99-7d9211898e4e.png)
 
-![image](https://user-images.githubusercontent.com/81541725/115171113-53682100-a090-11eb-9173-c0a880dc7f85.png)
+![3](https://user-images.githubusercontent.com/81541725/116811370-f734e080-ab16-11eb-9715-162f9ad35f84.png)
+
 
 NOTE
 
