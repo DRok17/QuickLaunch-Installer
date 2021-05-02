@@ -1,0 +1,26 @@
+local white = Color.new(255,255,255)
+
+-- Load an image
+local image = Graphics.loadImage("app0:/resources/sysmsg.png")
+
+-- Main loop
+while true do
+
+	-- Blend some images with different funcs (normal, rotated, scaled)
+	Graphics.initBlend()
+	Graphics.drawImage(0, 0, image)
+	Graphics.termBlend()
+
+	-- Check for input
+	if Controls.check(Controls.read(), SCE_CTRL_TRIANGLE) then
+		modinstall00()
+		break
+	elseif Controls.check(Controls.read(), SCE_CTRL_CIRCLE) then
+		Graphics.freeImage(image)
+		break
+	end
+
+	-- Flip screen
+	Screen.flip()
+
+end
