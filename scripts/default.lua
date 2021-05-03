@@ -6,7 +6,7 @@ local image = Graphics.loadImage("app0:/resources/sysmsg.png")
 -- Main loop
 while true do
 
-	-- Blend some images with different funcs (normal, rotated, scaled)
+	-- Shows System Message menu)
 	Graphics.initBlend()
 	Graphics.drawImage(0, 0, image)
 	Graphics.termBlend()
