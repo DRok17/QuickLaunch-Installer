@@ -87,5 +87,9 @@ All PNGs need to be 282 x 108. If you would like to title it, I've placed a Pixl
 - Crashes can occur in the Edit Menu. In some cases, it's best to re-install/extract the data files if the Edit Menu does not open.
 - Images on Main Menu are stretched but are not in Edit Menu; this is normal and is due to a limitation with LPP-Vita.
 
+## Special Thanks
+
+Thanks to https://nodeadfolk.wordpress.com/2014/04/10/free-ps-vita-buttons-more-work/ for providing the PS Vita buttons used.
+
 
 
