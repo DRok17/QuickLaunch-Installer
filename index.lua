@@ -10,11 +10,13 @@ Based on QuickLaunch Intstaller by 1upus in OneLUA
 local uxpath = "ux0:/data/qlinstall/"
 local urpath = "ur0:/shell/whats_new/np/"
 local img = "ur0:/shell/whats_new/np/img/"
+ver = "v1.4"
 
 --\*init images*/
 bg = Graphics.loadImage("app0:/resources/bg.jpg")
 bar = Graphics.loadImage("app0:/resources/bar.png")
 barlow = Graphics.loadImage("app0:/resources/bar-low.png")
+menu = Graphics.loadImage("app0:/resources/mainmenu.png")
 resapp01 = Graphics.loadImage("ux0:/data/qlinstaller/restore/app01.png")
 resapp02 = Graphics.loadImage("ux0:/data/qlinstaller/restore/app02.png")
 resapp03 = Graphics.loadImage("ux0:/data/qlinstaller/restore/app03.png")
@@ -96,8 +98,9 @@ while true do
 	Graphics.drawImage(0, 0, bg)
 	Graphics.drawImage(0, 0, bar)
 
+
 	--\* Display info */
-	Font.print(font, 227, 0, "QuickLaunch Installer v1.3 - Lua Player Plus Edition", cyan)
+	Font.print(font, 350, 0, "QuickLaunch Installer " ..ver.. "", cyan)
 	Screen.flip()
 
 -- Functions --
@@ -118,8 +121,8 @@ end
 
 -- GFX
 if samples[idx].desc1 then
-	Font.print(font, 17, 405, "QuickLaunch Preview", white)
 	Graphics.drawImage(0, 0, barlow)
+	Graphics.drawImage(0, 0, menu)
 	Graphics.drawImage(40, 436, samples[idx].desc1)
 end
 
@@ -135,8 +138,9 @@ end
 Graphics.termBlend()
 Screen.flip()
 
-	--\* Controls*/
+	--\* Touch Controls*/
 	pad = Controls.read()
+		--\* Button Controls*/
 	if Controls.check(pad, SCE_CTRL_UP) and not Controls.check(oldpad, SCE_CTRL_UP) then
 		idx = idx - 1
 		if idx == 0 then
@@ -149,12 +153,16 @@ Screen.flip()
 		end
 	elseif Controls.check(pad, SCE_CTRL_CROSS) and not Controls.check(oldpad, SCE_CTRL_CROSS) then
 		dofile("app0:/scripts/" .. samples[idx].id .. ".lua")
+
+elseif Controls.check(pad, SCE_CTRL_SQUARE) and not Controls.check(oldpad, SCE_CTRL_SQUARE) then
+		dofile("app0:/scripts/" .. samples[idx].id .. "/app01.lua")
 	end
 
-	--\* Controls to exit app */
-        if Controls.check(pad, ltrigger) and Controls.check(pad, rtrigger) then
-	    System.exit()
+	-- VitaShell Command
+        if Controls.check(pad, select) then
+	    System.launchApp("VITASHELL")
 	end
+
 
 	-- Saving old controls scheme
 oldpad = pad

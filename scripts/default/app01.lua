@@ -1,7 +1,7 @@
 local white = Color.new(255,255,255)
 
 -- Load an image
-local image = Graphics.loadImage("app0:/resources/sysmsg.png")
+local image = Graphics.loadImage("app0:/resources/sysmsg2.png")
 
 -- Main loop
 while true do
@@ -13,7 +13,7 @@ while true do
 
 	-- Check for input
 	if Controls.check(Controls.read(), SCE_CTRL_TRIANGLE) then
-		modinstall00()
+		Graphics.freeImage(image)
 		break
 	elseif Controls.check(Controls.read(), SCE_CTRL_CIRCLE) then
 		Graphics.freeImage(image)
