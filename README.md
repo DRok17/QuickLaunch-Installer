@@ -5,6 +5,13 @@ QuickLaunch Installer is now made in Lua Player Plus.
 Originally created by 1upus, QuickLaunch Installer allows you to customize the quick menu shortcuts.
 v1.4 has 6 User customizable slots and 1 preset slot.
 
+## KNOWN ISSUES
+
+- Crashes can occur in the Edit Menu. In some cases, it's best to re-install/extract the data files if the Edit Menu does not open.
+- Images on Main Menu are stretched but are not in Edit Menu - This is normal and is due to a limitation with LPP-Vita.
+- Images on Main Menu are small or are too large - Most common "startup.png" files are sized at 280 by 158, so any file smaller or larger than that will be in or out of bounds.
+
+
 ![1](https://user-images.githubusercontent.com/81541725/136826031-204ffa20-25e3-4d58-9fda-ff325d17112b.png)
 
 ![2](https://user-images.githubusercontent.com/81541725/136826065-78d1ac20-3289-4e50-83ce-f01bb2015e7f.png)
@@ -81,11 +88,6 @@ All PNGs need to be 282 x 108. If you would like to title it, I've placed a Pixl
 ![image](https://user-images.githubusercontent.com/81541725/136827300-af2de626-f748-4e1f-9209-84fe0194583f.png)
 
 ![image](https://user-images.githubusercontent.com/81541725/115172492-65978e80-a093-11eb-8f38-e2b296aca997.png)
-
-## KNOWN ISSUES
-
-- Crashes can occur in the Edit Menu. In some cases, it's best to re-install/extract the data files if the Edit Menu does not open.
-- Images on Main Menu are stretched but are not in Edit Menu; this is normal and is due to a limitation with LPP-Vita.
 
 ## Special Thanks
 
